@@ -4,15 +4,15 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Dorfsvald.net</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'home/bootstrap/css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'home/bootstrap/css/bootstrap.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}"/>
 </head>
 <body>
-    <header class="navbar navbar-static-top menu navbar-fixed-top" role="banner">
+    <header class="navbar navbar-static-top top-menu navbar-fixed-top" role="banner">
         <div class="navbar-header">
             <a class="navbar-brand" href="/"><img src="{% static 'home/images/dorfsvald.net.png' %}"></a>
         </div>
-        <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+        <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse" id="top-menu-left">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="">What is it?</a>
@@ -24,13 +24,22 @@
                     <a href="">Portfolio</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="">Contact</a></li>
+            <ul class="nav navbar-nav navbar-right" id="top-menu-right">
+                <li><a href="">Contact<img src="{% static 'home/images/ewandor_pix.png' %}"></a></li>
             </ul>
         </nav>
     </header>
-    <div id="content">
-        {% block content %}{% endblock %}
+    <div id="main">
+        <div id="title">
+            <div class="container">
+                {% block title %}{% endblock %}
+            </div>
+        </div>
+        <div id="content">
+            <div class="container">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
     </div>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="{% static 'home/bootstrap/js/bootstrap.js' %}"></script>

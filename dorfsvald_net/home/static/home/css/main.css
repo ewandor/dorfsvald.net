@@ -1,15 +1,14 @@
-body {
-    padding-top: 70px;
+
+header {
+
 }
 
-.menu {
-    background-color: green;
-    padding-right: 10px;
+.top-menu {
+    background-color: #9a3a1c;
 }
 
 .navbar-brand {
-    padding-top: 10px;
-    padding-bottom: 45px;
+    padding-top: 15px;
 }
 
 .navbar-nav {
@@ -20,6 +19,48 @@ body {
     background-color: #336633;
 }
 
-.menu a {
+.top-menu a {
     color: white;
+}
+
+#top-menu-left a {
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+}
+
+#top-menu-right {
+    margin-right: 0px;
+}
+
+#top-menu-right a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.top-menu-bottom {
+    background: white;
+    height: 7px;
+    height: 7px;
+}
+
+#main {
+    margin-top: 69px;
+}
+
+#title {
+    font-size: 24px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    text-align: left;
+    background: linear-gradient(to bottom, green 0, #00AD00 100%);
+    color: white;
+}
+
+#margin-left {
+
+}
+
+#margin-right {
+    background: linear-gradient(to left, green 0%, white 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
