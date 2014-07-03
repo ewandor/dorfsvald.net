@@ -5,6 +5,16 @@ header {
 
 .top-menu {
     background-color: #9a3a1c;
+    height: 68px;
+}
+
+.top-menu button {
+    margin-top: 18px;
+    background-color: #9a3a1c;
+}
+
+.top-menu .navbar-toggle .icon-bar {
+    background-color: white;
 }
 
 .navbar-brand {
@@ -13,10 +23,16 @@ header {
 
 .navbar-nav {
     padding-top: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
-    background-color: #336633;
+.nav {
+    background-color: #9a3a1c;
+}
+
+.nav > li > a:hover, .nav > li > a:focus, .navbar-toggle:focus, .navbar-toggle:hover {
+    background-color: green;
 }
 
 .top-menu a {
@@ -29,32 +45,29 @@ header {
 
 }
 
-#top-menu-right {
-    margin-right: 0px;
-}
-
 #top-menu-right a {
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
-.top-menu-bottom {
-    background: white;
-    height: 7px;
-    height: 7px;
-}
+
 
 #main {
-    margin-top: 69px;
+    margin-top: 68px;
 }
 
 #title {
     font-size: 24px;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    border-top: 7px yellow solid;
+    padding-bottom: 40px;
+    padding-top: 40px;
     text-align: left;
     background: linear-gradient(to bottom, green 0, #00AD00 100%);
     color: white;
+}
+
+#title h1 {
+    font-size: 60px
 }
 
 #margin-left {

@@ -10,9 +10,15 @@
 <body>
     <header class="navbar navbar-static-top top-menu navbar-fixed-top" role="banner">
         <div class="navbar-header">
+            <button data-target=".top-menu-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="/"><img src="{% static 'home/images/dorfsvald.net.png' %}"></a>
         </div>
-        <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse" id="top-menu-left">
+        <nav role="navigation" class="collapse navbar-collapse top-menu-navbar-collapse" id="top-menu-left">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="">What is it?</a>
